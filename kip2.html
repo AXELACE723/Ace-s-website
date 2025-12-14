@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website | Geospatial Engineering</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #22c55e);
+      color: white;
+      padding: 3rem 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text h2 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .hero-text p {
+      margin-top: 1rem;
+      max-width: 500px;
+    }
+
+    .profile-pic {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: white;
+      padding: 6px;
+      justify-self: center;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0f766e;
+    }
+
+    .about p {
+      max-width: 800px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #22c55e;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-text p {
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / HERO -->
+  <header>
+    <div class="container hero">
+      <div class="hero-text">
+        <h1>Nimrod Rotich</h1>
+        <h2>Geospatial Engineering Student | University of Nairobi</h2>
+        <p>
+          I am a Geospatial Engineering student at the University of Nairobi with an interest in GIS, surveying, remote sensing, and spatial data analysis.
+        </p>
+      </div>
+
+      <!-- PHOTO PLACE -->
+      <div class="profile-pic">
+        
+        <img src="WhatsApp Image 2025-12-14 at 22.29.41_7aa9abc5.jpg" alt="Profile Photo">
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <h3>I am a creative, crtical thinking, innovative type of guy</h3>
+      <p>
+        I am currently pursuing a Bachelor’s degree in Geospatial Engineering at the University of Nairobi (UON). My academic interests include land surveying, GIS applications, cartography, remote sensing, and spatial data management. I am passionate about applying geospatial technologies to solve real-world problems.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <div class="container">
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="skill-card">GIS (QGIS, ArcGIS)</div>
+        <div class="skill-card">Land & Engineering Surveying</div>
+        <div class="skill-card">Remote Sensing</div>
+        <div class="skill-card">Cartography & Map Design</div>
+        <div class="skill-card">GPS & GNSS</div>
+        <div class="skill-card">Basic Programming (Python, HTML/CSS)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="container">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project">
+          <h4>GIS Mapping Project</h4>
+          <p>Created thematic maps and spatial analysis using QGIS.</p>
+        </div>
+        <div class="project">
+          <h4>Survey Fieldwork</h4>
+          <p>Participated in leveling, traversing, and GPS surveys.</p>
+        </div>
+        <div class="project">
+          <h4>Remote Sensing Study</h4>
+          <p>Analyzed satellite imagery for land use classification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © 2025 Nimrod Rotich | Geospatial Engineering Student – UON
+    </p>
+  </footer>
+
+</body>
+</html>
